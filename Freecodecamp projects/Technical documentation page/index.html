@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="styles.css"></link>
+    <title>Basic html</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+        <header>Basic html</header>
+        <ul class="ul">
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_is_HTML">What is HTML</a></li>
+          <li><a class="nav-link" href="#Basic_HTML_Structure">Basic HTML Structure</a></li>
+          <li><a class="nav-link" href="#Heading_and_Paragraphs">Heading and Paragraphs</a></li>
+          <li><a class="nav-link" href="#Adding_Links">Adding Links</a></li>
+          <li><a class="nav-link" href="#Inserting_Images">Inserting Images</a></li>
+          <li><a class="nav-link" href="#Creating_Lists">Creating Lists</a></li>
+          <li><a class="nav-link" href="#Forms_and_Input_Elements">Forms and Input Elements</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc" class="main">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>In this page, you’ll learn the fundamentals of HTML, the primary language for structuring content on the web. We’ll explore everything from the basic structure of an HTML page to the essential tags that allow you to create and organize your first web pages. Through examples and hands-on exercises, you’ll gain the skills needed to build your own pages, setting the foundation for more advanced web development.</p>
+        </section>
+        <section class="main-section" id="What_is_HTML">
+          <header>What is HTML</header>
+          <p>HTML (HyperText Markup Language) is the foundation for creating websites. It structures your content, making it possible for web browsers to display your text, images, links, and other elements in an organized way. Learning HTML is your first step into the world of web development.</p>
+        </section>
+        <section class="main-section" id="Basic_HTML_Structure">
+          <header>Basic HTML Structure</header>
+          <p>An HTML document is structured with four main sections:</p>
+          <pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;My first page&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Welcome to html&lt;/h1&gt;
+        &lt;p&gt;This is a pharagraph&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+          </code></pre>
+          <ul>
+            <li>&lt;!DOCTYPE html&gt; Declares the document type.</li>
+            <li>&lt;html&gt; Encloses the entire document.</li>
+            <li>&lt;head&gt; Contains metadata like the page title.</li>
+            <li>&lt;body&gt; Contains all the visible content.</li>
+          </ul>
+        </section>
+        <section class="main-section" id="Heading_and_Paragraphs">
+          <header>Heading and Paragraphs</header>
+          <p>Headings and subheadings are very important for easier scanning. As Web readers scan down a page, they read the beginnings of headings more than the ends.</p>
+          <ul>
+            <li>Headings: Use &lt;h1&gt; to &lt;h6&gt; tags to define headings, from largest (&lt;h1&gt;) to smallest (&lt;h6&gt;).</li>
+            <li>Paragraphs: Use the &lt;p&gt; tag to add blocks of text.</li>
+          </ul>
+          <pre><code>
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;h2&gt;Subheading&lt;/h2&gt;
+    &lt;p&gt;This is a paragraph with some text.&lt;/p&gt;
+          </code></pre>
+        </section>
+        <section class="main-section" id="Adding_Links">
+          <header>Adding Links</header>
+          <p>Links allow you to connect to other webpages or even specific sections of the same page.</p>
+          <p>Basic Link:</p>
+          <pre><code>
+    &lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+          </code></pre>
+          <ul>
+            <li>href: Specifies the destination URL.</li>
+            <li>The text between <a> and </a> is what users click on.</li>
+          </ul>
+          <p>Internal Links:</p>
+          <p>You can use links to jump to sections within the same page. This requires adding an id to the target section:</p>
+          <pre><code>
+    &lt;a href="section1"&gt;Go to Section 1&lt;/a&gt;
+
+    &lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+    &lt;p&gt;This is Section 1 of the page&lt;/p&gt;
+          </code></pre>
+        </section>
+        <section class="main-section" id="Inserting_Images">
+          <header>Inserting Images</header>
+          <p>Images make webpages visually engaging. Use the &lt;img&gt; tag to add them.</p>
+          <p>Example:</p>
+          <pre><code>
+    &lt;img src="image.jpg" alt="A description of the image" width="500" height="300"&gt;
+          </code></pre>
+          <ul>
+            <li>src: Specifies the image file path or URL.</li>
+            <li>alt: Provides alternative text for accessibility and when the image cannot load.</li>
+            <li>width and height: Set the dimensions of the image.
+</li>
+          </ul>
+        </section>
+        <section class="main-section" id="Creating_Lists">
+          <header>Creating Lists</header>
+          <p>Lists are used to display related items. HTML supports two types:</p>
+          <p>Unordered List (bulleted):</p>
+          <pre><code>
+    &lt;ul&gt;
+      &lt;li&gt;Item 1&lt;/li&gt;
+      &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+          </code></pre>
+          <p>Ordered List:</p>
+          <pre><code>
+    &lt;ol&gt;
+      &lt;li&gt;Item 1&lt;/li&gt;
+      &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+          </code></pre>
+        </section>
+        <section class="main-section" id="Forms_and_Input_Elements">
+          <header>Forms and Input Elements</header>
+          <p>Forms are used to collect user input, with the &lt;form&gt; tag enclosing all form elements. Common input elements include text fields, checkboxes, radio buttons, and submit buttons.</p>
+          <p>Example:</p>
+          <pre><code>
+    &lt;form action="/submit" method="post"&gt;
+      &lt;label for="name"&gt;Name:&lt;/label&gt;
+      &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+          </code></pre>
+          <p>Forms can include other elements, such as dropdowns, text areas, and file uploads, allowing for comprehensive user interactions.</p>
+        </section>
+    </main>
+  </body>
+</html>
