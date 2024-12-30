@@ -1,0 +1,43 @@
+body {
+  font-family: Helvetica;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  background-color: #E3E3E3;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  }
+
+.figure {
+  text-align: center;
+  border: 1px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+figcaption {
+  padding-top: 20px;
+}
+
+.cronological {
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tribute-info {
+  text-align: center;
+}
